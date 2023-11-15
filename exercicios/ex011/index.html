@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 011</title>
+</head>
+<body>
+    <h1>Exercício 011: Mídias em HTML</h1>
+
+    <h2>Imagens Dinâmicas</h2>
+    <p>Tente abrir esse site em vários dispositivos, ou simplesmente aumente ou diminua o tamanho do navegador</p>
+
+    <picture>
+        <!--Importante, a imagen menor deve vir primeiro! A ordem das imagens importa quando você utiliza as tags picture e source para imagens dinâmicas. Caso utilizando o min-width, a maior imagen deve vir primeiro.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+ 
+        <img src="imagens/foto-g.png" alt="Imagen flexivel">
+    </picture>
+</body>
+</html>
